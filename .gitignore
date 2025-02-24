@@ -171,3 +171,5 @@ cython_debug/
 .pypirc
 
 data/ 
+catdog/
+dogs-vs-cats-redux-kernels-edition.zip
