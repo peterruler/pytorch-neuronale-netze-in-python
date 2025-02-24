@@ -5,7 +5,6 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 import torch.optim as optim
 
-
 has_gpu = torch.cuda.is_available()
 has_mps = torch.backends.mps.is_built()
 device = "mps" if has_mps else "cpu"
