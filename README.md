@@ -4,6 +4,9 @@
 ## Install Miniconda if Running Locally
 - [Miniconda Installation Guide](https://docs.anaconda.com/free/miniconda)
 
+# install torch environment
+- `conda create -y --name torch3118 python=3.11.8`
+
 ## Activate conda env
 - `conda activate torch3118`
 
