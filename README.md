@@ -19,7 +19,7 @@
 # Dataset ressources
 
 ## Cats & Dogs CNN
-- [Cats Dogs Imagess CNN](https://www.kaggle.com/competitions/dogs-vs-cats-redux-kernels-edition)
+- [Cats Dogs Images CNN](https://www.kaggle.com/competitions/dogs-vs-cats-redux-kernels-edition)
 
 ## Names Classifier RNN
 - [Names Classifier data.zip](https://pytorch.org/tutorials/intermediate/char_rnn_generation_tutorial.html)
