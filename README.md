@@ -13,7 +13,7 @@
 ## Install dependencies
 - `pip install -r requirements.txt`
 
-## Install Cuda if nvidia CPU is present
+## Install Cuda if nvidia GPU is present
 - `https://developer.nvidia.com/cuda-downloads`
 
 
