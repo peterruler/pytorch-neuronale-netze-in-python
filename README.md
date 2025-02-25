@@ -14,8 +14,7 @@
 - `pip install -r requirements.txt`
 
 ## Install Cuda if nvidia GPU is present
-- `https://developer.nvidia.com/cuda-downloads`
-
+- [CUDA Driver download](https://developer.nvidia.com/cuda-downloads)
 
 ## Cats & Dogs CNN
 - [Cats Dogs Imagess CNN](https://www.kaggle.com/competitions/dogs-vs-cats-redux-kernels-edition)
