@@ -1,5 +1,5 @@
 # pytorch-neuronale-netze-in-python
- udemy course pytorch-neuronale-netze-in-python
+- [udemy course pytorch-neuronale-netze-in-python](https://www.udemy.com/course/pytorch-neuronale-netze-in-python/learn/lecture/9155266#overview)
 
 ## Install Miniconda if Running Locally
 - [Miniconda Installation Guide](https://docs.anaconda.com/free/miniconda)
