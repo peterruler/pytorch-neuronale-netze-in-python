@@ -16,6 +16,8 @@
 ## Install Cuda if nvidia GPU is present
 - [CUDA Driver download](https://developer.nvidia.com/cuda-downloads)
 
+# Dataset ressources
+
 ## Cats & Dogs CNN
 - [Cats Dogs Imagess CNN](https://www.kaggle.com/competitions/dogs-vs-cats-redux-kernels-edition)
 
