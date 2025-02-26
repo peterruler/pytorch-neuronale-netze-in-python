@@ -29,5 +29,13 @@
 
 ## Reinforcement learning
 - `pip install gym`
+- `pip install "gym[classic_control]"`
+- `pip install pygame`
+
+### Screenshot
+![DQLearnung](/DQLearning.png?raw=true "DQLearnung")
+![Pendulum](/pendulum.png?raw=true "Balance")
+# Function (unfortunatels) unstable
+![Oscilates](/oscilates.png?raw=true "Oscilates")
 
 
