@@ -35,7 +35,8 @@
 ### Screenshot
 ![DQLearnung](/DQLearning.png?raw=true "DQLearnung")
 ![Pendulum](/pendulum.png?raw=true "Balance")
-# Function (unfortunatels) unstable
+
+# Function (unfortunately) unstable
 ![Oscilates](/oscilates.png?raw=true "Oscilates")
 
 
