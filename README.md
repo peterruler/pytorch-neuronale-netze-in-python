@@ -25,7 +25,7 @@
 - [Names Classifier data.zip](https://pytorch.org/tutorials/intermediate/char_rnn_generation_tutorial.html)
 
 ## Rockyou Passwordlist
-- [Row you rockyou.txt](https://github.com/josuamarcelc/common-password-list)
+- [Rock you rockyou.txt](https://github.com/josuamarcelc/common-password-list)
 
 ## Reinforcement learning
 - `pip install gym`
