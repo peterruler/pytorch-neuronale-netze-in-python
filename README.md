@@ -37,6 +37,6 @@
 ![Pendulum](/pendulum.png?raw=true "Balance")
 
 # Function (unfortunately) unstable
-![Oscilates](/oscilates.png?raw=true "Oscilates")
+![Oscilates](/oscilates-better.png?raw=true "Oscilates little better")
 
 
