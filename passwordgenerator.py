@@ -100,23 +100,34 @@ def train(input_tensor, target_tensor):
     for p in model.parameters():
         p.data.add_(-learning_rate, p.grad.data)
     return output, loss.item() / input_tensor.size()[0]
-def sample() :
+
+def sample():
     input = Variable(passwordToTensor("F"))
     hidden = model.initHidden()
     output = "F"
-    for i in range(15):
+    for _ in range(15):
         out, hidden = model(input[0], hidden)
-        _, i = out.data.topk(1)
-        i = i[0][0]
-        if i == letters_num - 1:
+        # Hole die Top-5 Kandidaten
+        topk_val, topk_idx = out.data.topk(5)
+        chosen = None
+        for candidate in topk_idx[0]:
+            cand_idx = candidate.item()
+            # Wenn EOS erreicht wird, brich ab
+            if cand_idx == letters_num - 1:
+                chosen = cand_idx
+                break
+            # Verhindere, dass der aktuelle Buchstabe gleich dem letzten generierten ist
+            if letters[cand_idx] != output[-1]:
+                chosen = cand_idx
+                break
+        if chosen is None or chosen == letters_num - 1:
             break
-        else:
-            letter = letters[i]
-            output += letter
-            input = Variable(passwordToTensor(letter))
+        letter = letters[chosen]
+        output += letter
+        input = Variable(passwordToTensor(letter))
     return output
-print("Sample:", sample())
 
+print("Sample:", sample())
 
 loss_sum = 0
 plots = []
@@ -126,9 +137,12 @@ for i in range(1, 1000000):
     loss_sum += loss
     if i % 100 == 0:
         avg_loss = loss_sum / 100
-        print(i / 100, "% made. Loss:", loss, "average Loss:", avg_loss)
+        print(i / 10000, "% made. Loss:", loss, "average Loss:", avg_loss)
         plots.append(avg_loss)
         loss_sum = 0
 print("Sample:", sample())
+
+torch.save(model, "password-model.pth")
+
 plt.plot(plots)
 plt.show()  # Anzeige des Plots
